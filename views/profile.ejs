@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+ <head>
+     <meta charset="utf-8"/>
+     <meta name="viewport" content="width=device-width, initial-scal=1.0"/>
+     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <title>profile</title>
+</head>   
+
+<body>
+    <% if(userId) { %>
+        <h3>current user is true <%=userId%></h3>
+    <%} else {%>
+        <h3>current user is false</h3>
+    <%}%>
+        
+    <h1>this is profile page</h1>
+    <h2>name: <%= name %></h2>
+    <h2>book: <%= book %></h2>
+    <h2>email: <%= email %></h2>
+
+
+    <a href="/logout"><button>LOG OUT</button></a>
+</body>
+</html>

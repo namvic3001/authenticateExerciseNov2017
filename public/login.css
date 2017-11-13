@@ -1,0 +1,17 @@
+
+.loginForm {
+    margin-top: 5rem;
+}
+
+.legend1 {
+    color: blue;
+    margin: auto;
+
+}
+
+
+.fieldset1 {
+    color: pink;
+    background-color: green;
+    border: 2px solid red;
+}

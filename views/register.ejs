@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>this is the register page</h1>
+
+    <form action="/register" method="post">
+        <label for="email">Email</label>
+        <input id="email"  name="email" type="email"/><br>
+        <label for="name">Name</label>
+        <input id="name"  name="name" type="text"/><br>
+        <label for="favoriteBook">Favorite Book</label>
+        <input id="favoriteBook"  name="favoriteBook" type="text"/><br>
+        <label for="password">Password</label>        
+        <input id="password" name="password" type="password"/>
+        <label for="confirmPassword">Confirm Password</label>        
+        <input id="password" name="confirmPassword" type="password"/>
+        <input type="submit" value="Submit"/>
+    
+    </form>
+</body>
+</html>

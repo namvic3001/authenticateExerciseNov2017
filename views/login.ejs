@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title><%= title %> </title>
+
+    <!-- links to public/login.css , express middleware have
+    been set to look for static files like css inside 
+    the public folder -->
+    <link rel="stylesheet" href="login.css"/>
+</head>
+
+<body>
+    
+    <form class="loginForm" action='/login' method='post'>
+        <fieldset class="fieldset1">
+            <legend class="legend1">Login</legend>
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="email" placeholder="Email" /><br/>
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" placeholder="Password"/>
+            <input type="submit" value="OK"/>
+        </fieldset>
+    </form>
+</body>
+
+</html>
