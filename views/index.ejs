@@ -7,9 +7,15 @@
 <body>
     <% if(userId) { %>
         <h3>current user is logged in as <%=userId%></h3>
-    <%} else {%>
-        <h3>current user is NOT logged in</h3>
-     <%}%>
-    <h1>this is the <strong>home</strong> page</h1>
+        <%} else {%>
+            <h3>current user is NOT logged in</h3>
+            <%}%>
+            <h1>this is the <strong>home</strong> page</h1>
+            
+            <div id="root">THIS IS ROOT DIV</div>
+            
+            
+            
+            <script src="/bundle.js"></script>
 </body>
 </html>

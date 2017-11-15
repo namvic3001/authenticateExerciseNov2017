@@ -18,7 +18,7 @@ let alreadyLoggedIn =  (req, res, next) => {
 
 
 let requiresLogin = (req, res, next) => {
-    console.log('got to middlware.requiresLogin')
+    console.log('got to middleware.requiresLogin')
 
     if (req.session && req.session.userId) { 
         console.log('calling NEXT() AS ALREADY LOGGED IN')

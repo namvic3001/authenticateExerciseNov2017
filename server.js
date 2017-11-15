@@ -1,10 +1,14 @@
-let express = require('express')
-let bodyParser = require('body-parser')
-let publicAreaRouter = require('./routes/publicAreaRoutes.js')
-let membersAreaRouter = require('./routes/membersAreaRoutes.js')
-let mongoose = require('mongoose')
-let session = require('express-session')
-let MongoStore = require('connect-mongo')(session)
+import express from 'express'
+import bodyParser from 'body-parser'
+import publicAreaRouter from './routes/publicAreaRoutes.js'
+import membersAreaRouter from './routes/membersAreaRoutes.js'
+import mongoose from 'mongoose'
+import session from 'express-session'
+import mongoStore from 'connect-mongo'
+
+
+let MongoStore = mongoStore(session)
+
 
 
 
@@ -84,7 +88,7 @@ server.use(bodyParser.urlencoded({extended: true}))
 server.set('template engine', 'ejs')
 server.set('views', __dirname + '/views')
 
-let port = process.env.PORT || 8087
+let port = process.env.PORT || 8080
 
 server.listen(port, () => {
     console.log('listening on port', port)
